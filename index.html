@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App del Clima - API</title>
-
     <link rel="stylesheet" href="estilos.css">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
 </head>
 
 <body>
 
     <header>
-        <img src="banner.png" alt="Banner de la App del Clima" class="banner">
+        <img src="img/banner.png" alt="Banner de la App del Clima" class="banner">
 
         <h1>🌤️ App del Clima</h1>
-
         <p>Consulta el clima en tiempo real de cualquier ciudad</p>
     </header>
+    <h2>Historial de búsquedas</h2>
+
+<div id="historial"></div>
 
     <main>
+        <button id="btnUbicacion">📍 Usar mi ubicación</button>
 
         <form id="formulario" class="buscador">
-
-            <input
-                type="text"
-                id="inputCiudad"
+            <input 
+                type="text" 
+                id="inputCiudad" 
                 placeholder="Escribe una ciudad..."
                 required
             >
 
             <button type="submit">🔍 Consultar</button>
-
+            <h2>Pronóstico de 5 días</h2>
+            <div id="pronostico" class="pronostico"></div>
         </form>
 
         <div id="resultado" class="resultado"></div>
@@ -42,14 +42,13 @@
     </main>
 
     <footer>
-
         <p>&copy; 2026 - App del Clima | Datos de OpenWeatherMap</p>
-
-        <p>Banner diseñado en Canva 🎨</p>
-
+        <p>Banner diseñado en Canva ☁️</p>
     </footer>
 
-    <script src="script.js"></script>
+    <button id="btnTema">🌙 Cambiar tema</button>
+    <button id="btnWhatsApp">📱 Compartir en WhatsApp</button>
 
+    <script src="script.js"></script>
 </body>
 </html>
